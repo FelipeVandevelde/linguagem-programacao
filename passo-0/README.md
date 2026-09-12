@@ -49,7 +49,7 @@ Isso garante que todos estão com o ambiente funcionando.
  ```
 </details>
 
-<details open>
+<details close>
 <summary>
 
 ### + `Program.cs`
@@ -78,4 +78,18 @@ Isso garante que todos estão com o ambiente funcionando.
 
 </details>
 
-[**Ir para o Passo 1 ->**](../passo-1/README.md)
+<div style="display: flex; justify-content: space-between;">
+
+<div>
+
+[**← Voltar para inicio**](../README.md)
+
+</div>
+
+<div>
+
+[**Ir para o Passo 1 →**](../passo-1/README.md)
+
+</div>
+
+</div>

@@ -1,14 +1,11 @@
-# Passo 4: A Boa Prática (Apresentação Boa)
+# Revisao: Comparando práticas e apresentações
 
-O arquivo `ApresentacaoBoa.cs` corrige o erro da `ApresentacaoRuim.cs`. Aqui nós utilizamos um bloco de captura específico. 
-
-Isso nos permite ter um log rico em detalhes (incluindo todo o Stack Trace) e manter a aplicação resiliente.
+Para podermos ver a diferença das duas apresentações vamos executar elas em sequência. Isso nos permite analisar os dois em uma única instancia e comparar as duas práticas ainda no mesmo log.
 
 ## 🧪 Momento de Teste Final
 
-1. Crie o arquivo `ApresentacaoBoa.cs`.
-2. Atualize o `Program.cs` para rodar ambos os cenários em sequência.
-3. Clique em **Run**.
+1. Atualize o `Program.cs` para rodar ambos os cenários em sequência.
+2. Clique em **Run**.
 
 **Resultado Esperado:** 
 O console exibirá o Cenário 1 (mensagem inútil escondendo o erro) e, logo abaixo, executará o Cenário 2.
@@ -37,7 +34,6 @@ No Cenário 2, você verá a mensagem correta (`Timeout na porta 443`) e o **Sta
 
 -             Console.WriteLine("\n[Programa continuou executando, e nos sabemos a causa real do erro]\n");
 +             var cenarioRuim = new ApresentacaoRuim();
-- 
 +             cenarioRuim.Executar(); 
 +             
 +             Console.WriteLine("\n===================================================\n");
@@ -47,7 +43,7 @@ No Cenário 2, você verá a mensagem correta (`Timeout na porta 443`) e o **Sta
 +             
 +             var cenarioBom = new ApresentacaoBoa();
 +             cenarioBom.Executar();
-+ 
+
             Console.WriteLine("... Continuação do código ...");
         }
  ```

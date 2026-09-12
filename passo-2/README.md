@@ -69,7 +69,7 @@ O programa também irá falhar (*crash*). Porém, repare no **Stack Trace natura
 using System;
 
 - using Exceptions;
-
+- 
 namespace Seminario
 
 @@ -11,12 +11,17 @@
@@ -90,4 +90,18 @@ namespace Seminario
 
 </details>
 
-[**Ir para o Passo 3 ->**](../passo-3/README.md)
+<div style="display: flex; justify-content: space-between;">
+
+<div>
+
+[**← Voltar para o Passo 1**](../passo-1/README.md)
+
+</div>
+
+<div>
+
+[**Ir para o Passo 3 →**](../passo-3/README.md)
+
+</div>
+
+</div>

@@ -19,4 +19,4 @@ Siga a trilha passo a passo:
 
 ### Resultado Final
 
-O resultado que queremos obter em **[resultado](./resultado)**.
+O resultado que queremos obter em **[revisao](./revisao)**.

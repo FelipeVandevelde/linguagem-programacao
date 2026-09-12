@@ -83,4 +83,18 @@ A resposta é: **nós não sabemos**. Ao engolir a falha, nós destruímos o dia
 
 </details>
 
-[**Ir para o Passo 4 ->**](../passo-4/README.md)
+<div style="display: flex; justify-content: space-between;">
+
+<div>
+
+[**← Voltar para o Passo 2**](../passo-2/README.md)
+
+</div>
+
+<div>
+
+[**Ir para o Passo 4 →**](../passo-4/README.md)
+
+</div>
+
+</div>

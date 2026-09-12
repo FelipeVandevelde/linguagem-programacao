@@ -28,7 +28,7 @@ Isso prova que nosso tipo customizado de erro existe e está operante no sistema
 @@ -0,0 +1,20 @@
 
 + using System;
-+
++ 
 + namespace Exceptions
 + {
 +     public abstract class FaturamentoException : Exception
@@ -65,7 +65,7 @@ Isso prova que nosso tipo customizado de erro existe e está operante no sistema
 using System;
 
 + using Exceptions;
-
++ 
 namespace Seminario
 
 @@ -0,0 +13,16 @@
@@ -74,11 +74,25 @@ namespace Seminario
 + 
 +             // Testando a nossa nova exceção customizada
 +             throw new FalhaComunicacaoSefazException("Simulando erro de comunicação");
-+
++ 
 +             Console.WriteLine("... Continuação do código ...");
         }
  ```
 
 </details>
 
-[**Ir para o Passo 2 ->**](../passo-2/README.md)
+<div style="display: flex; justify-content: space-between;">
+
+<div>
+
+[**← Voltar para o Passo 0**](../passo-0/README.md)
+
+</div>
+
+<div>
+
+[**Ir para o Passo 2 →**](../passo-2/README.md)
+
+</div>
+
+</div>
