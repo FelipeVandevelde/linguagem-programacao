@@ -11,7 +11,7 @@ namespace Seminario
             var cenarioRuim = new ApresentacaoRuim();
             cenarioRuim.Executar();
 
-            Console.WriteLine("\n[Programa continuou executando, mas nós não sabemos a causa real do erro]");
+            Console.WriteLine("\n[Programa continuou executando, mas nós não sabemos a causa real do erro]\n");
             
             Console.WriteLine("... Continuação do código ...");
         }

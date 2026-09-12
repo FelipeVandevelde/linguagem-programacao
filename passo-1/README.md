@@ -4,18 +4,18 @@ Neste passo, criamos uma hierarquia própria de exceções. Isso é fundamental 
 
 ## 🧪 Momento de Teste
 
-1. No seu compilador online, adicione o código do arquivo `Exceptions.cs` (contendo a `FaturamentoException` e `FalhaComunicacaoSefazException`).
-2. Atualize o seu `Program.cs` para refletir o código desta pasta, onde forçamos o lançamento da nova exceção usando a palavra-chave `throw`.
+1. Crie o arquivo `Exceptions.cs` (contendo a `FaturamentoException` e `FalhaComunicacaoSefazException`).
+2. Atualize o seu `Program.cs`  para forçamos o lançamento da nova exceção usando a palavra-chave `throw`.
 3. Clique em **Run**.
 
 **Resultado Esperado:** 
-Desta vez a aplicação irá falhar (*crash*). No console em vermelho (ou sinalizado como erro), você verá explicitamente a falha com o nome da nossa classe: `FalhaComunicacaoSefazException: Simulando erro de comunicação`. 
+Desta vez a aplicação irá falhar (*crash*). No console em vermelho e sinalizando erro, você verá explicitamente a falha com o nome da nossa classe: `FalhaComunicacaoSefazException: Simulando erro de comunicação`. 
 
 Isso prova que nosso tipo customizado de erro existe e está operante no sistema.
 
 # Mudanças
 
-<details open>
+<details close>
 <summary>
 
 ### + `TratamentosErros/Exceptions.cs`
@@ -70,14 +70,13 @@ namespace Seminario
 
 @@ -0,0 +13,16 @@
 
-      Console.WriteLine("Iniciando Sistema de Faturamento...");
-			
-+       // Testando a nossa nova exceção customizada
-+ 			throw new FalhaComunicacaoSefazException("Simulando erro de comunicação");
-+             
+            Console.WriteLine("Iniciando Sistema de Faturamento...");
++ 
++             // Testando a nossa nova exceção customizada
++             throw new FalhaComunicacaoSefazException("Simulando erro de comunicação");
++
 +             Console.WriteLine("... Continuação do código ...");
         }
-
  ```
 
 </details>

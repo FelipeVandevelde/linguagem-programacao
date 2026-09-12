@@ -1,14 +1,15 @@
 # Passo 0: O Ponto de Partida
 
-Aqui nós temos a base do nosso projeto, com apenas o arquivo principal da aplicação pronto para iniciar.
+Aqui nós temos nosso primeiro passo, remover o arquivo padrão e criar para termos apenas o arquivo principal da aplicação pronto para iniciar.
 
 ## 🧪 Momento de Teste
 
-Neste laboratório utilizaremos um compilador C# online. 
+Começando por abrir o compilador online que utilizaremos [OneCompiler](https://onecompiler.com/csharp). 
 
-1. Copie todo o conteúdo do arquivo `Program.cs` desta pasta.
-2. Cole no editor do compilador online substituindo o código que estava lá.
-3. Clique em **Run** (ou Executar).
+1. Na parte esquerda selecione o icone de arquivos para poder visualizar os arquivos da nossa aplicação.
+2. Aperte com o botão direito no arquivo "HelloWorld.cs" e selecione "Delete"
+3. Crie o arquivo `Program.cs`.
+5. Clique em **Run** (ou Executar).
 
 **Resultado Esperado:** O console do compilador exibirá apenas a mensagem:
 `Iniciando Sistema de Faturamento...`

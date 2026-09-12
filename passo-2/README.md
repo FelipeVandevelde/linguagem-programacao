@@ -4,18 +4,19 @@ Aqui adicionamos a classe `ServicoFaturamento.cs`. Nela, o método `EmitirNotaFi
 
 ## 🧪 Momento de Teste
 
-1. Adicione o código de `ServicoFaturamento.cs` ao compilador online.
-2. Atualize o `Program.cs` com o código desta etapa, que apenas instancia o serviço e emite a nota, sem usar nenhum tratamento (`try-catch`).
+1. Crie o arquivo `ServicoFaturamento.cs` (contendo a Exception e a classe `ServicoFaturamento`).
+2. Atualize o `Program.cs` para que apenas instancie o serviço e emita a nota, sem usar nenhum tratamento (`try-catch`).
 3. Clique em **Run**.
 
 **Resultado Esperado:** 
-O programa também irá falhar e fechar abruptamente. Porém, repare no **Stack Trace natural** gerado no console:
-Ele mostrará que a falha originou na linha de `ConectarSefaz`, passou por `EmitirNotaFiscal` e subiu para o `Main`. 
-O objetivo deste passo é mostrar ao vivo a **propagação em pilha (Call Stack)** funcionando.
+O programa também irá falhar (*crash*). Porém, repare no **Stack Trace natural** gerado no console:
+- Ele mostra a falha que descrevemos na classe. 
+- Mostra também que a falha originou na linha de `ConectarSefaz`, passou por `EmitirNotaFiscal` e subiu para o `Main`. 
+- Está é a  **propagação em pilha (Call Stack)**!.
 
 # Mudanças
 
-<details open>
+<details close>
 <summary>
 
 ### + `TratamentosErros/ServicoFaturamento.cs`
@@ -73,18 +74,18 @@ namespace Seminario
 
 @@ -11,12 +11,17 @@
 
-            Console.WriteLine("Iniciando Sistema de Faturamento...");
+-             Console.WriteLine("Iniciando Sistema de Faturamento...");
++             Console.WriteLine("Tentando emitir nota fiscal...\n");
 
--           // Testando a nossa nova exceção customizada
-+           var servico = new ServicoFaturamento();
--           throw new FalhaComunicacaoSefazException("Simulando erro de comunicação");
-+
+-             // Testando a nossa nova exceção customizada
++             var servico = new ServicoFaturamento();
+-             throw new FalhaComunicacaoSefazException("Simulando erro de comunicação");
++ 
 +             // Aqui chamamos o método que, lá no fundo, vai estourar um erro.
 +             // Como não temos try-catch, o erro vai subir até quebrar o programa.
 +             servico.EmitirNotaFiscal();
-+             
-              Console.WriteLine("... Continuação do código ...");
 
+            Console.WriteLine("... Continuação do código ...");
  ```
 
 </details>
