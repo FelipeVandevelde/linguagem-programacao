@@ -83,18 +83,14 @@ A resposta é: **nós não sabemos**. Ao engolir a falha, nós destruímos o dia
 
 </details>
 
-<div style="display: flex; justify-content: space-between;">
+<footer>
+  <div align="right">
+  
+  [**Ir para o Passo 4 →**](../passo-4/README.md)
+  </div>
 
-<div>
-
-[**← Voltar para o Passo 2**](../passo-2/README.md)
-
-</div>
-
-<div>
-
-[**Ir para o Passo 4 →**](../passo-4/README.md)
-
-</div>
-
-</div>
+  <div align="left">
+  
+  [**← Voltar para o Passo 2**](../passo-2/README.md)
+  </div>
+</footer>

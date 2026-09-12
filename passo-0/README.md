@@ -78,18 +78,14 @@ Isso garante que todos estão com o ambiente funcionando.
 
 </details>
 
-<div style="display: flex; justify-content: space-between;">
+<footer>
+  <div align="right">
+  
+  [**Ir para o Passo 1 →**](../passo-1/README.md)
+  </div>
 
-<div>
-
-[**← Voltar para inicio**](../README.md)
-
-</div>
-
-<div>
-
-[**Ir para o Passo 1 →**](../passo-1/README.md)
-
-</div>
-
-</div>
+  <div align="left">
+  
+  [**← Voltar para inicio**](../README.md)
+  </div>
+</footer>
