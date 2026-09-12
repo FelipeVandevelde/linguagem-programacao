@@ -81,18 +81,14 @@ namespace Seminario
 
 </details>
 
-<div style="display: flex; justify-content: space-between;">
+<footer>
+  <div align="right">
+  
+  [**Ir para o Passo 2 →**](../passo-2/README.md)
+  </div>
 
-<div>
-
-[**← Voltar para o Passo 0**](../passo-0/README.md)
-
-</div>
-
-<div>
-
-[**Ir para o Passo 2 →**](../passo-2/README.md)
-
-</div>
-
-</div>
+  <div align="left">
+  
+  [**← Voltar para o Passo 0**](../passo-0/README.md)
+  </div>
+</footer>
